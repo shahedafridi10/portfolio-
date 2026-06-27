@@ -1,0 +1,300 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:'Inter', Arial,  sans-serif ;
+    scroll-behavior: smooth;
+
+}
+
+body{
+    background-color: #0f172a;
+    color: white;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #111827;
+    position: sticky;
+    top: 0;
+}
+
+.logo{
+    font-size: 28px;
+}
+
+nav a{
+    color: rgb(254, 246, 246);
+    text-decoration: none;
+    margin-left: 25px;
+    
+    
+}
+
+nav a:hover {
+    color: #67caf4;
+}
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 8% ;
+    flex-wrap: wrap;
+}
+
+.left{
+    max-width: 550px;
+}
+
+.left h1{
+    font-size: 60px;
+    margin: 10px 0;
+}
+
+.left h2{
+    font-size: 40px;
+    color: orange;
+    margin-bottom:20px ;
+}
+
+.left p{
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+.btn{
+    background-color: orange;
+    padding: 15px 40px;
+    color: white;
+    text-decoration: none;
+    border-radius: 40px;
+    transition: .4s;
+    font-weight: bold;
+    display: inline-block
+}
+
+.btn:hover{
+    background-color: rgb(78, 208, 240);
+    color: #111827;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 4);
+}
+
+.image-box{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 6px solid #38bdf8;
+    transition: .5s;
+}
+
+.image-box img{
+    width: 100%;
+   object-fit: cover;
+   transition: .5s;
+}
+
+.image-box:hover img{
+    transform: scale(1.2);
+}
+
+section{
+    padding: 80px 8%;
+}
+
+.card1{
+    background: #1e293b;
+    padding: 30px;
+    width: 100%;
+    border-radius: 10px;
+    transition: .4s;
+}
+
+.card1:hover{
+    transform: translateY(-10px);
+    box-shadow:0 10px 20px rgba(0,0,0,.4); 
+}
+h2{
+    margin-bottom:30px ;
+    font-size: 35px;
+}
+.card{
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 10px;
+    transition: .4s;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+    box-shadow:0 10px 20px rgba(0,0,0,.4);
+}
+
+.skill{
+    margin-bottom: 25px;
+}
+
+
+.bar{
+    width: 100%;
+    height: 18px;
+    border-radius: 20px;
+    overflow: hidden;
+    
+}
+
+.bar div{
+    height: 100%;
+    animation: load 3s;
+}
+
+.html{
+    width: 95%;
+    background: #ff5733;
+}
+
+.css{
+    width: 95%;
+    background: #38bdf8;
+}
+
+.javascript{
+    width: 80%;
+    background: #f7df1e;
+}
+
+.react{
+    width: 80%;
+    background:#00d8ff;
+}
+
+.bootstrap{
+    width: 75%;
+    background: orange;
+}
+
+.go{
+    width: 50%;
+    background: rgb(17, 130, 179);
+}
+
+.cpluse{
+    width: 50%;
+    background: rgb(203, 232, 34);
+}
+
+.python{
+    width: 50%;
+    background: rgb(72, 124, 8);
+}
+
+.c{
+    width: 50%;
+    background: rgb(251, 160, 23);
+}
+
+.git{
+    width: 60%;
+    background: blueviolet;
+}
+
+.github{
+    width: 60%;
+    background: rgb(43, 17, 67);
+}
+
+.postman{
+    width: 80%;
+    background: rgb(134, 160, 237);
+}
+
+.word{
+    width: 95%;
+    background: #38bdf8;
+}
+
+.excle{
+    width: 65%;
+    background: rgb(11, 197, 11);
+}
+
+.powerbi{
+    width: 50%;
+    background: goldenrod;
+}
+
+.contact{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.social-item{
+    display: flex;
+    display: inline-block;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #0f172a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon img{
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+}
+
+.social-item:hover{
+    color: #00bfff;
+}
+
+.footer{
+    color: #0f172a;
+    text-align: center;
+    padding: 20px;
+    background: white;
+}
+
+@keyframes load{
+    from{
+        width: 0;
+    }
+}
+
+@media(max-width: 768px){
+    .hero{
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+.image-box{
+    margin-top: 40px;
+    width:250px;
+    height: 250px;
+}
+
+header{
+    flex-direction: column;
+}
+
+nav{
+    margin-top: 15px;
+}
+}
